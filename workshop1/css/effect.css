@@ -1,0 +1,105 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h4,
+p {
+    text-align: center;
+    margin: 0;
+}
+
+.toppings {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    max-height: 20%;
+    text-overflow: inherit;
+    background-color: coral;
+}
+
+#headingLeft {
+    position: absolute;
+    height: 100%;
+    width: 80%;
+}
+
+#headingRight {
+    position: absolute;
+    right: 10%;
+    
+    height: 100%;
+    
+    transform: translateX(50%);
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    height: 80%;
+    background-color: brown;
+}
+
+.container>img {
+    width: 15%;
+    position: absolute;
+    height: 40%;
+}
+
+.topImage {
+    left: 40%;
+    top: -40%;
+    opacity: 0;
+    animation: myAnimationForTop 3s linear 1 forwards;
+}
+
+@keyframes myAnimationForTop {
+    to {
+        opacity: 1;
+        top: 5%;
+    }
+}
+
+.leftImage {
+    opacity: 0;
+    top: 40%;
+    left: -10%;
+    animation: myAnimationForLeft 3s linear 1 forwards;
+}
+
+@keyframes myAnimationForLeft {
+    to {
+        left: 20%;
+        opacity: 1;
+    }
+}
+
+.rightImage {
+    opacity: 0;
+    top: 40%;
+    right: -10%;
+    animation: myAnimationForRight 3s linear 1 forwards;
+}
+
+@keyframes myAnimationForRight {
+    to {
+        right: 25%;
+        opacity: 1;
+    }
+}
+
+#upperText {
+    font-size: 30px;
+}
+
+#lowerText {}
