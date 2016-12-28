@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel = 'stylesheet' type = 'text/css' href = 'css/style.css'>
+		<title>Workshop 3</title>
+	</head>
+	<body>
+		<div id = 'container'>
+			<!-- contents of this div is appended later from js -->
+		</div>
+
+			<script id="generalTemplate" type="text/x-handlebars-template">    
+				<div class="header">{{textdata}}</div>
+				
+				{{#if draggableItems}}		
+					<div id = 'draggables'>		
+						{{#each draggableItems}}
+							{{>imgContent}}
+						{{/each}}
+					</div>
+				{{/if}}
+
+				{{#if droppableItems}}
+				<div id = 'droppables'>
+					{{#each droppableItems}}
+					<div class="{{dragClass}}">
+						{{>imgContent}}
+					</div>	
+					{{/each}}
+				</div>
+				{{/if}}
+
+			</script>
+
+		<script id="imagecontent-partial" type="text/x-handlebars-template">
+					<img class="{{imgClass}}" src="{{imgSrc}}"/>		
+		</script>
+
+		<script src = 'js/jquery3.1.1.js'></script>
+		<script src = 'js/dragAndDrop.js'></script>
+		<script src = 'js/jquery-ui.js'></script>
+		<script src = 'js/handlebars-3.0.3.js'></script>
+	</body>
+
+</html>

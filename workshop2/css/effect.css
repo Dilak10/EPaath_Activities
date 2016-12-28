@@ -4,14 +4,12 @@ html, body {
 	width: 100%;
     min-width: 60%;
     overflow: inherit;
-   
 }
 
 #draggable {
 	position: absolute;
 	height: 60%;
 	width: 100%;
-	
 	background: #AA7755;
 }
 
@@ -27,24 +25,24 @@ html, body {
 	width: 12%;
 	background-repeat: no-repeat;
 }
+
 .box > img, .circle > img, .triangle>img {
 	display: inline-block;
-    
 	width: 80%;
-	
-	
 }
+
 #iscircle,#isbox,#istriangle{
     position: absolute;
     width: 20%;
 }
+
 #iscircle > img, #isbox > img,#istriangle>img {
 	display: inline-block;
 	width: 80%;
     height: 30%;
     max-width: 100%;
-  
 }
+
 #circle1 {
     top:5%;
     left:5%;
@@ -65,20 +63,9 @@ html, body {
     left:5%;
 }
 
-#box1 {
-    top: 50%;
-    left:20%;
-}
-
 #triangle1 {
     top:50%;
     left:50%;
-    
-}
-
-#box4 {
-    top:5%;
-    left:50%
 }
 
 #triangle2 {
@@ -86,14 +73,19 @@ html, body {
     left:65%;
 }
 
+#triangle3 {
+    top: 50%;
+    left:80%;
+}
+
 #triangle4 {
     top: 5%;
     left:20%;
 }
 
-#triangle3 {
+#box1 {
     top: 50%;
-    left:80%;
+    left:20%;
 }
 
 #box3 {
@@ -106,22 +98,22 @@ html, body {
     left:65%
 }
 
+#box4 {
+    top:5%;
+    left:50%
+}
+
 #iscircle {
-   
     top:5%;
     left: 10%;
-    
 }
+
 #istriangle{
     top:5%;
     left: 40%
 }
+
 #isbox{
     top:5%;
     left: 70%
-    
-}
-
-.newCss{
-    background-color: blue;
 }

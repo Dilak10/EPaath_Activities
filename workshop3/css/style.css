@@ -1,0 +1,24 @@
+.draggableCircle, .draggableRect{
+	height: 20%;
+}
+
+#droppables {
+    position: absolute;
+	top: 16%;
+	right: 12%;
+}
+
+#draggables {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    height: 85%;
+}
+
+.header {
+    text-align: center;
+    padding: 2%;
+    font-size: 5vmin;
+    background: antiquewhite;
+    margin-bottom: 5%;
+}

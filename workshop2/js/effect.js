@@ -1,13 +1,5 @@
-
-
 $(function() {
-    
-   
-    $(".box").click(function(){
-          
-    });
-        
-        
+	//making the box circle and triangles draggable
         $(".box, .circle,.triangle").draggable({
 		containment : "body",
 		cursor : "crosshair",
@@ -18,7 +10,6 @@ $(function() {
 	});
     
 	$('#isbox').droppable({
-        
 		accept : ".box",
 		hoverClass : "hovered",
 		drop : handleCardDrop
@@ -35,17 +26,10 @@ $(function() {
 		hoverClass : "hovered",
 		drop : handleCardDrop
 	});
-	// $(".ball").sortable({
-	// connectWith : "#isball"
-	// });
-	// $(".notball").sortable({
-	// connectWith : "#isnotball"
-	// });
 
 	function handleCardDrop(event, ui) {
 		ui.draggable.draggable('disable');
         var result;
-         
 		var dropped = ui.draggable;
 		var droppedOn = $(this);
 		var count = 0;
@@ -98,7 +82,6 @@ $(function() {
 				"top" : top+"%",
 			}).appendTo(droppedOn);
         }
-        
 
         result=$("#iscircle>.circle").length+
             $("#isbox>.box").length +
@@ -106,11 +89,8 @@ $(function() {
         
         //for no of correct ans
         console.log("result:"+result);
-        if(result==12){
+        if(result==12)
             alert("You Win !!!");
-            
-            
-        }
 	}
 
 });
